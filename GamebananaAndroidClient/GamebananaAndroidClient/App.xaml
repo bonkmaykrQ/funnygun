@@ -7,7 +7,16 @@
     -->
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="Primary">#1c272e</Color>
+            <Color x:Key="Primary">#151d23</Color>
+            <Color x:Key="Primary2">#1c272e</Color>
+            <Color x:Key="Primary3">#1c242a</Color>
+            <Color x:Key="Primary4">#151d23</Color>
+            <Color x:Key="Accent">#d4c356</Color>
+            <Color x:Key="AccentFade">#827835</Color>
+            <Color x:Key="PrimaryTextColor">#e2e2e2</Color>
+            <Style x:Key="PageStyle" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+            </Style>
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="#e2e2e2"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
@@ -15,12 +24,12 @@
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                    <Setter Property="BackgroundColor" Value="{StaticResource Accent}" />
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Disabled">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="#151d23" />
+                                    <Setter Property="BackgroundColor" Value="{StaticResource AccentFade}" />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>
